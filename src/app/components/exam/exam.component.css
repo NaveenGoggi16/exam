@@ -1,0 +1,15 @@
+.container input{
+margin-right: 10px;
+margin-left: 20px;
+}
+.container .number{
+text-align: center;
+}
+.btn-btn{
+    margin-left: 700px;
+    background-color: dodgerblue;
+    color:#fff;
+    border: none;
+    padding: 12px 25px;
+    margin-bottom: 20px;
+}

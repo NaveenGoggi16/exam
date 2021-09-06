@@ -1,0 +1,10 @@
+<div class="container">
+    <h1 class="number">Number Series</h1>
+<div class="question" *ngFor="let question of questions; let index = index">
+        <div class="text"><h3>{{question.text}}</h3></div>
+        <ng-container *ngFor="let option of question.options; let innerIndex = index">
+            <input  type="radio" [name]="index" [id]="index + innerIndex" [value]="innerIndex" /><label class="option" ><h4>{{option}}</h4></label>
+        </ng-container>
+    </div>
+</div>
+<button (click)="GetSelectedOptions()" class="btn-btn">Submit</button>
